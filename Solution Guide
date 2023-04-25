@@ -1,0 +1,18 @@
+# Python-Project-Code-4
+The program takes the user's input for day, month, and year of birth through three separate Entry widgets and then calculates the age using the date class from the datetime module.
+
+The calculate_age function gets called when the "Calculate Age" button is pressed. The function first retrieves the user's input for the birthdate, then calculates the age using the current date and the birthdate.
+
+The age is then displayed on the result_label widget. The program continues running until the user closes the GUI window.
+
+Firstly, the necessary modules are imported. The tkinter module is used to create the GUI, and the date class from the datetime module is used to perform the age calculation.
+
+Next, the calculate_age function is defined. The function retrieves the current date using the date.today() method, and the user's input for the birthdate using the get() method of the Entry widgets.
+
+The age variable is then calculated using the formula today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day)). This formula takes into account the birth month and day to determine the person's age.
+
+Finally, the age is displayed on the GUI using the config() method of the result_label widget.
+
+The GUI is created using the Tk class from the tkinter module. Label and Entry widgets are used to display and input data respectively, and the Button widget is used to trigger the calculate_age function when clicked.
+
+Overall, the program provides an easy-to-use graphical interface for users to calculate their age and displays the result on the same interface.
